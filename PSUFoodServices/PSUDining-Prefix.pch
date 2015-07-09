@@ -1,0 +1,40 @@
+//
+// Prefix header for all source files of the 'PSUFoodServices' target in the 'PSUFoodServices' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+    #import "Constants.h"
+    #import "TestFlight.h"
+#endif
+
+#define kName @"name"
+#define kLocationCode @"locationCode"
+#define kDate @"date"
+#define kCalories @"calories"
+#define kCholesterol @"cholesterol"
+#define kDietaryFiber @"dietary_fiber"
+#define kProtein @"protein"
+#define kSatFat @"sat_fat"
+#define kSodium @"sodium"
+#define kSugars @"sugars"
+#define kTotalCarb @"total_carb"
+#define kTotalFat @"total_fat"
+#define kTransFat @"trans_fat"
+#define kServingSize @"servingsize"
+#define kLogItem @"LogItem"
+#define kMyFood @"MyFood"
+
+#define kDateFormat @"MM/dd/yyyy"
+
+#define kSecondsInADay 86400
+
+typedef void (^CompletionBlock)(id);

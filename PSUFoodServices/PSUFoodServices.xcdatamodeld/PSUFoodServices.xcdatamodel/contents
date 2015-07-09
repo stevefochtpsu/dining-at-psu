@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="872" systemVersion="10J869" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Campus" syncable="YES">
+        <attribute name="index" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Food" isAbstract="YES" syncable="YES">
+        <attribute name="calories" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cholesterol" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dietary_fiber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="protein" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sat_fat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sodium" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sugars" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="total_carb" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="total_fat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trans_fat" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="LogItem" parentEntity="Food" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="servingsize" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MyFood" parentEntity="Food" syncable="YES"/>
+    <elements>
+        <element name="Food" positionX="-10413" positionY="-711" width="128" height="210"/>
+        <element name="LogItem" positionX="-10233" positionY="-708" width="128" height="75"/>
+        <element name="MyFood" positionX="-10233" positionY="-549" width="128" height="45"/>
+        <element name="Campus" positionX="160" positionY="192" width="128" height="60"/>
+    </elements>
+</model>
